@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #101014 0%, #3b1458 55%, #92278f 100%);
+    color: #ffffff;
+}
+
+header {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 44px 0 10px;
+}
+
+#main_heading {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(2.2rem, 7vw, 4.6rem);
+}
+
+#para {
+    text-align: center;
+    margin: 16px auto 0;
+    color: #f6deff;
+    font-size: clamp(1rem, 2.8vw, 1.35rem);
+}
+
+#territory_list {
+    width: min(900px, 92%);
+    margin: 26px auto 48px;
+    padding: 0;
+    list-style-position: inside;
+    display: grid;
+    gap: 12px;
+}
+
+#territory_list li {
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.28);
+    line-height: 1.4;
+}
