@@ -1,183 +1,78 @@
 * {
-    color: white;
-}
-
-#main_heading {
-    font-size: 100px;
-    text-decoration: double underline;
-    text-align: center;
-}
-
-@media (max-width: 600px) and (min-width: 551px) {
-    #main_heading {
-        font-size: 95px;
-    }
-    
-}
-
-@media (max-width: 550px) and (min-width: 501px) {
-    #main_heading {
-        font-size: 90px;
-    }
-}
-
-@media (max-width: 500px) and (min-width: 451px) {
-    #main_heading {
-        font-size: 85px;
-    }
-}
-
-@media (max-width: 450px) and (min-width: 301px) {
-    #main_heading {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 300px) and (min-width: 251px) {
-    #main_heading {
-        font-size: 75px;
-    }
-}
-
-@media (max-width: 250px) and (min-width: 201px) {
-    #main_heading {
-        font-size: 70px;
-    }
-}
-
-@media (max-width: 200px) and (min-width: 151px) {
-    #main_heading {
-        font-size: 65px;
-    }
-}
-
-@media (max-width: 150px) and (min-width: 101px) {
-    #main_heading {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 100px) and (min-width: 51px) {
-    #main_heading {
-        font-size: 55px;
-    }
-}
-
-@media (max-width: 50px) and (min-width: 0px) {
-    #main_heading {
-        font-size: 50px;
-    }
+    box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(to right bottom, #000000,#03033e, #05056f, #17078c , #2f2fe7f2);
-    background-repeat: no-repeat;
+    margin: 0;
     min-height: 100vh;
-    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #041320 0%, #0a2f52 60%, #115c9a 100%);
+    color: #ffffff;
+}
+
+header {
+    width: min(1000px, 92%);
+    margin: 0 auto;
+    padding: 42px 0 8px;
+}
+
+#main_heading {
+    margin: 0;
+    font-size: clamp(2.4rem, 8vw, 5rem);
+    text-align: center;
 }
 
 #para {
+    margin: 18px auto 0;
     text-align: center;
-    font-size: 40px;
-}
-
-@media (max-width: 600px) and (min-width: 551px) {
-    #para {
-        font-size: 38px;
-    }
-}
-
-@media (max-width: 550px) and (min-width: 501px) {
-    #para {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 500px) and (min-width: 451px) {
-    #para {
-        font-size: 34px;
-    }
-}
-
-@media (max-width: 450px) and (min-width: 401px) {
-    #para {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 400px) and (min-width: 351px) {
-    #para {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 350px) and (min-width: 301px) {
-    #para {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 300px) and (min-width: 251px) {
-    #para {
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 250px) and (min-width: 201px) {
-    #para {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 200px) and (min-width: 151px) {
-    #para {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 150px) and (min-width: 101px) {
-    #para {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 100px) and (min-width: 51px) {
-    #para {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 50px) and (min-width: 0px) {
-    #para {
-        font-size: 16px;
-    }
+    max-width: 900px;
+    color: #d8ebff;
+    font-size: clamp(1rem, 2.7vw, 1.4rem);
+    line-height: 1.5;
 }
 
 #main_div {
-    height: 100vh;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
+    width: min(1000px, 92%);
+    margin: 24px auto 48px;
 }
 
-.states_div {
-    width: 400px;
-    height: 150px;
-    border-radius: 17%;
-    background: linear-gradient(to right bottom, #000000, #033603, #015101, #079007, #04ff047e);
-    font-size: 40px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    text-align: center;
+#state_list {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
 }
 
-a {
+#state_list li {
+    list-style: decimal;
+}
+
+.states_link {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
     text-decoration: none;
-    margin: 150px;
+    color: #ffffff;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.26);
+}
+
+a.states_link:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.status {
+    font-size: 0.82rem;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    white-space: nowrap;
+}
+
+.status.live {
+    background: #2ba84a;
 }
